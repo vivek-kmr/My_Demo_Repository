@@ -6,6 +6,9 @@ then
 	b=$(( a*a ))
 	echo "Square of $a:"
 	echo $b
+	c=$(( b*a ))
+	echo "Cube of $a:"
+	echo $c
 elif [ $a -le 1 ];
 then
 	echo 'Number Entered is less than 0'
