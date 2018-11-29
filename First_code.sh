@@ -1,5 +1,9 @@
 echo "Enter any positive integer:"
 read a;
+re='^[0-9]+$'
+if ! [[ $a =~ $re ]] ; then
+   echo "error: Not a number" >&2; exit 1
+fi
 
 if [ $a -gt 1 ];
 then
