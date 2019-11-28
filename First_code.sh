@@ -1,4 +1,4 @@
-echo "Enter any positive integer:"
+echo "Enter any positive integer: "
 read a;
 re='^[0-9]+$'
 if ! [[ $a =~ $re ]] ; then
